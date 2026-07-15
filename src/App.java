@@ -1,17 +1,26 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        //System.out.println("Lento-");
-        //runFibonaci();
-        //System.out.println("Rapido");
-        //runFibonaciRecPD();
+       // System.out.println("Lento-");
+       // runFibonaci();
+       // System.out.println("Rapido");
+       // runFibonaciRecPD();
+       // System.out.println("---------------");
 
+       // System.out.println("Lento");
+       // runFibonaciIterativo();
+       // System.out.println("Rapido");
+       // runFibonaciIterativoRapido();
 
-        System.out.println("Lento");
-        runFibonaciIterativo();
-        System.out.println("Rapido");
-        runFibonaciIterativoRapido();
+        runMaze();
     }
 
+    private static void runMaze() {
+        Maze maze = new Maze();
+        maze.resolver();
+        System.out.println("\nCeldas visitadas:");
+        System.out.println(maze.getVisitados());
+    }
+    
     private static void runFibonaciIterativo() {
         long startTime = System.nanoTime();
         int num = 48;
@@ -46,6 +55,7 @@ public class App {
 
         System.out.println("Finbonaci de " + num + " es " + i + "  en: " + milliseconds + " milliseconds");
     }
+
     public static long getFibonacciIter2(int num){
         if (num <= 1) 
             return num;
