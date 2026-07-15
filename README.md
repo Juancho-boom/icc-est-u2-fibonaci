@@ -2,4 +2,4 @@
 ## Estrucura de datos
 ## Estudiante: Juan David Coronel Palacios
 ## 
-Fecha: 20/04/2026
+Fecha: 15/07/2026
